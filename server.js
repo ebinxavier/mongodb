@@ -9,11 +9,30 @@ app.listen(3000);
 var MongoClient = require('mongodb').MongoClient;
 
 
-var url="mongodb://test:test@ds059496.mlab.com:59496/user_details";
-MongoClient.connect(url, function(err, db) {
-  console.log("connect"+err) 
+var url="mongodb://ebin:ebin@ds019633.mlab.com:19633/myblog";
 
-  db.collection("userdata").insert({email:'ebin@gmail.com',pass:'12345'})
+var table;
+MongoClient.connect(url, function(err, db) {
+if(err==null)
+console.log("connected to db")
+else 
+console.log("not connected to db : "+err);
+
+table=db.collection("userdata");
+
+table.insert({email:'ebin@gmail.com',pass:'from conection'})
+
+  
+
+
+  table.find({email:'ebin@gmail.com'}, function(err, cursor){
+    cursor.toArray(function(err,items){
+    	console.log(items);
+    });
+    // db.close();
+});
+
+
 })
 
 
@@ -28,6 +47,7 @@ MongoClient.connect(url, function(err, db) {
 		res.sendFile(__dirname+'/public/home.html');
 	})
 	app.get('/login',function(req,res){
+		table.insert({email:'ebin@gmail.com',pass:'from Login'})
 		res.sendFile(__dirname+'/public/login.html');
 	})
 	app.get('/signup',function(req,res){
