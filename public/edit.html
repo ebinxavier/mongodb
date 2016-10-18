@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<body>
+<header>
+<h1>My Nodejs Blog</h1>
+<!-- <h2><a href="#" class="pull-right">Login</a></h2> -->
+<div class="clear"></div>
+</header>
+
+<div class="container">
+  <h2>Edit Your Post</h2>
+  <form class="form-horizontal">
+    
+   <div class="form-group">
+  <label for="post-head">Head of your post:</label>
+  <textarea class="form-control" rows="2" id="post-head"></textarea>
+  </div>
+
+
+   <div class="form-group">
+  <label for="comment">Body of your post:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+  </div>
+
+
+   
+    <div class="form-group">
+      <div class="col-sm-offset-0 col-sm-7">
+        <button type="button" id="btn" class="btn btn-default">Cancel</button>
+        <button type="button" id="btn" class="btn-signup btn-default">Save</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="script/edit.js"></script>
+</body>
+</html>

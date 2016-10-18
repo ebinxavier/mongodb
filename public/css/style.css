@@ -1,0 +1,67 @@
+h1{
+	color: white!important;
+	text-transform: uppercase;
+	text-align: center;
+	
+	margin: 0!important;
+}
+header{
+	padding: 30px;
+	background: black!important;
+}
+.clear{
+	clear: both;
+}
+body{
+	background: #aaa!important;
+}
+a{
+	text-decoration: none!important;
+}
+.post{
+	border: 1px solid gray;
+	border-radius: 10px;
+	background: #fff;
+	margin-top: 20px;
+	padding: 50px !important;
+	color: white;
+	box-shadow: 0px 0px 42px 5px black;
+	margin-bottom: 50px;
+	
+}
+.post h2{
+	color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 1px 18px black;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.edit{
+	margin-right: 50px;
+	font-size: 20px;
+	color: black;
+}
+.bottom_data{
+	margin-top: 80px;
+	color: gray;
+}
+.content{
+	color: #000;
+	font-size: 15px;
+	line-height: 2;
+	text-align: justify-all;
+
+}
+button{
+	color: white!important;
+    font-weight: bold;
+    background: #d81919!important;
+    border: 1px solid gray!important;
+}
+.btn-signup{
+	width: 80px;
+    height: 34px;
+    border-radius: 7px;
+    background: green!important;
+
+}
